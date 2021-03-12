@@ -11,7 +11,9 @@
     "lint": "eslint -c .eslintrc.js --ext .js,.vue .",
     "lint-fix": "eslint -c .eslintrc.js --ext .js,.vue . --fix",
     "scss-lint": "stylelint \"**/*.scss\" --cache --cache-location .cache/.stylelintcache --formatter verbose",
-    "scss-fix": "stylelint \"**/*.scss\" --fix --cache --cache-location .cache/.stylelintcache"
+    "scss-fix": "stylelint \"**/*.scss\" --fix --cache --cache-location .cache/.stylelintcache",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "PrestaShop",
   "license": "OSL-3.0",
@@ -48,7 +50,8 @@
     "vue-router": "^2.8.1",
     "vue-i18n": "^8.15.1",
     "vue-template-compiler": "^2.6.11",
-    "vuex": "^2.5.0"
+    "vuex": "^2.5.0",
+    "snyk": "^1.483.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -62,10 +65,10 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-2": "^6.22.0",
     "babel-register": "^6.26.0",
-    "bootstrap": "~4.0.0",
+    "bootstrap": "~4.3.1",
     "chai": "^4.2.0",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^6.0.0",
     "css-loader": "^3.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -87,7 +90,7 @@
     "postcss-preset-env": "^6.7.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
-    "stylelint": "^12.0.0",
+    "stylelint": "^13.0.0",
     "stylelint-config-prestashop": "^1.0.3",
     "uglify-save-license": "^0.4.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
@@ -101,5 +104,6 @@
     "presets": [
       "env"
     ]
-  }
+  },
+  "snyk": true
 }
