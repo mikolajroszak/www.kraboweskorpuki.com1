@@ -15,7 +15,7 @@
         "@prestashop-core/jquery.live-polyfill": "^1.1.1",
         "babel-loader": "^8.0.0-beta.4",
         "jquery": "^3.4.1",
-        "jquery-migrate": "^3.1.0",
+        "jquery-migrate": "^3.3.2",
         "jquery.browser": "^0.1.0",
         "path": "^0.12.7",
         "punycode": "^2.1.1",
