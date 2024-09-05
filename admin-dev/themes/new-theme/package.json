@@ -22,7 +22,7 @@
     "bourbon": "^4.2.6",
     "compass": "^0.1.1",
     "dropzone": "^5.5.1",
-    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.49",
     "events": "^3.0.0",
     "fos-routing": "0.0.6",
     "bootstrap-colorpicker": "^3.2.0",
